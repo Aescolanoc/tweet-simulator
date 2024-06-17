@@ -24,3 +24,5 @@ npm run build
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+favicon: <a href="https://www.flaticon.es/iconos-gratis/pajaro" title="pájaro iconos">Pájaro iconos creados por Freepik - Flaticon</a>
