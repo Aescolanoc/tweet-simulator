@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <h1 class="text-center mb-4">Lista de Tweets</h1>
-    <p v-if="!tweets.length">No hay Tweets</p>
+    <figure v-if="!tweets.length" style="display: flex; flex-direction: column; align-items: center">
+      <img src="./Icons/notweets.png" alt="No hay Tweets" style="width: 50%; opacity: 0.2" />
+      <figcaption style="font-weight: bold; font-size: xx-large; opacity: 0.2">No hay Tweets</figcaption>
+    </figure>
+
+    <!-- <p v-if="!tweets.length">No hay Tweets</p> -->
     <div class="tweet" v-for="tweet in tweets" :key="tweet.id">
       <p class="tweet_title">{{ tweet.username }}</p>
       <p class="tweet_text">{{ tweet.tweet }}</p>
